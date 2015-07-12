@@ -1,0 +1,154 @@
+/* GENERAL RESET */
+html, body {margin: 0; padding: 0; font-size: 18px; font-weight: normal; font-family: georgia, sans-serif; line-height: 1.5em; height: 100%;}
+ul, li {padding: 0; margin: 0; list-style: none;}
+p, blockquote, h1, h2, h3, h4, h5, h6 {margin: 0; padding: 0; font-size: inherit; font-weight: normal;}
+a, a:visited, a:link, a:active, a:hover {color: inherit; text-decoration: inherit; outline: none;}
+html {overflow-y: scroll;}
+/* FONTS */
+
+@font-face {
+	font-family: 'BebasNeueRegular';
+	src: url('../fonts/BebasNeue-webfont.eot');
+	src: local('☺'), url('../fonts/BebasNeue-webfont.woff') format('woff'), url('../fonts/BebasNeue-webfont.ttf') format('truetype'), url('../fonts/BebasNeue-webfont.svg#webfontAGQ6uv7S') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'FatboySlim';
+	src: url('../fonts/fbsbltc-webfont.eot');
+	src: local('☺'), url('../fonts/fbsbltc-webfont.woff') format('woff'), url('../fonts/fbsbltc-webfont.ttf') format('truetype'), url('../fonts/fbsbltc-webfont.svg#webfontqBZwFkzq') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.bebas {font-family: 'BebasNeueRegular'; text-transform: uppercase;}
+.fatboyslim {font-family: 'FatboySlim'; text-transform: uppercase; font-style: normal;}
+
+/* UTILITY STYLES */
+.pink {color: #ec008c;}
+.fltLeft {float: left;}
+.fltRight {float: right;}
+.clear {clear: both;}
+
+
+/* MAIN STYLES */
+body {color: #fff; background: #000; min-width: 980px;}
+
+#header {border-bottom: 1px solid #fff; position: relative; overflow: hidden; z-index: 2;}
+#menu {font-size: 60px; line-height: 60px; padding: 0 20px 0;}
+#menu li {float: left;}
+#menu a {display: block; padding-top: 20px;}
+#menu a:hover {background: #ec008c;}
+#menu .pink a:hover {background: #fff;}
+
+#contentContainer a, #contentContainer a:link, #contentContainer a:active, #contentContainer a:visited {color: #ec008c;}
+#contentContainer a:hover {color: #fff; background: #ec008c;}
+
+.logo_l {text-indent: -9999px; display: block; background: url(../images/mainTitle.jpg) no-repeat center center; height: 367px;}
+
+.inAssociation {border-top: 1px dotted #ec008c; display: block; margin: 0 auto; width: 885px; text-align: right; font-style:italic; line-height: 25px; padding-top:10px; margin-bottom: 40px; font-size: 16px}
+.inAssociation span {margin-right: 5px; display: inline-block;}
+.logoKids {text-indent: -9999px; background: url(../images/logoKids.png) no-repeat center center; width: 205px;}
+.logoTaz {color: #fff; font-size: 21px;}
+
+.blockQuote {background: url(../images/bgQuote.jpg) no-repeat top left; margin: 0 auto; width: 480px; padding:50px 60px 0 80px; text-align: center; font-size: 32px; line-height: 1.5em;}
+.blockQuote blockquote {background: url(../images/bgQuoteClose.png) no-repeat  right 80px; padding: 0 80px 50px 0; margin-right: -60px; font-style: italic;}
+.citation {font-size: 16px; font-style: normal;}
+
+#tazImage {position: fixed; bottom: 0; left: 0;}
+#tazImage img {display: block;}
+#aboutContainer {float: right; width: 75%; z-index: 2;}
+.aboutTaz {width: 43%; padding-left: 20px; border-left: 1px dotted #ec008c; margin: 20px 20px 20px 0}
+.aboutWalk {width: 43%; padding: 20px;}
+
+.tabNav {overflow: hidden; border-bottom: 5px solid #ec008c; margin-bottom: 20px; text-align: center; height: 64px;}
+.tabNav li {display: inline-block; margin: 0 5px;}
+.tabNav a {display: block;}
+#contentContainer .tabNav a:hover {background: none;}
+.tabNav a:hover h3 {background: #ec008c; color: #fff;}
+.tabNav {margin-top: 20px;}
+.tabNav h3 {font-size: 2em; background: #fff; color: #ec008c; float: left; padding: 6px 16px 0; line-height: 1.5em; position: relative; top:2px}
+.tabNav .active h3 {background: #ec008c; color: #fff; top:0; padding-top: 10px;}
+
+.tabPages .leftCol {width: 50%; float: left;}
+.tabPages .rightCol {width: 50%; float: right;}
+
+
+.tabPages .padding20 {padding:0 20px;}
+.tabPages .borderLeft {border-left: 1px dotted #ec008c;}
+.tabPages .borderRight {border-right: 1px dotted #ec008c;}
+
+p {margin:0 0 1.5em 0}
+
+
+#galleryContainer {width: 100%; position: fixed;height: 500px;top:50%; margin-top: -210px; overflow-x: hidden; overflow-y: visible;}
+.gallerySlider {position: relative; width: 10000px; cursor: move;}
+.gallerySlider li {float: left; width: 980px; padding: 0 100px;}
+.gallerySlider h4 {display: inline;}
+.galleryInfo {border-top: 1px solid #ec008c; padding: 10px 0 }
+
+.kidsGallery {position: absolute; left: 0; top: 0; width: 50%; text-align: right; bottom: 0;}
+.contGallery {position: absolute; right: 0; top: 0; width: 50%; border-left: 1px dotted #ec008c; bottom: 0;}
+#galleryContainer h2 {text-transform: uppercase; font-size: 3em;margin: 0 20px; position: absolute; top: 50%;}
+
+#contImages {position: absolute; right:50%; width:490px; top:50%; margin-top: -210px; display:none;}
+#kidsImages {position: absolute; left: 50%; width: 490px; top: 50%; margin-top: -210px; display: none;}
+.imageBlock {width: 450px; height: 200px; background: #1a1a1a; border: #666; margin-top: 10px;}
+.imageBlock img {border: 0;}
+.closeButton {width: 35px; height: 35px; background: url(../images/closeCross.png) no-repeat center center; display: block; position: absolute; top: 0; margin: 0 20px; display: none;}
+.kidsGallery .closeButton {right: 0;}
+.contGallery .closeButton {left: 0;}
+
+.contGallery h2 {left:0;}
+.kidsGallery h2 {right:0;}
+
+p.donate {width: 800px; margin: 20px auto; text-align: center; font-size: 29px; line-height: 1.5em;}
+p.thank {width: 900px; margin: 20px auto; text-align: center; font-size: 29px; line-height: 1.5em;}
+
+#taz img {margin-right: 15px;}
+#kidsco .logoKids {float: left; display: block; margin-right: 4px;}
+.bodyContainer {min-height: 100%; position: relative;}
+.stuartLink {position: absolute; right: 15px; bottom:15px; color: #ec008c; font-size: 14px; font-style: italic; }
+.imageBlock a {display: block; position: relative;}
+.imageBlock a span {position: absolute; bottom: 1px; left: 3px; font-size: 24px; color: #fff;}
+
+
+/* kid pages */
+#kidpageContainer {width:75%; min-width: 980px; float: right;}
+#kidpageContainer h1 {font-size: 300%; padding: 35px 0;}
+.kidpageInfo {width: 50%; float: left; border-right: 1px dotted #ec008c;}
+.kidpageInfo>div {padding-right:20px;}
+.kidpageInfo h2 {font-size:120%}
+
+.kidpageGallery {float: right; width: 49%;}
+.kidpageGallery img {display: block;}
+.kidpageGallery li {float: left; margin-bottom: 10px;}
+.kidpageGallery li:nth-child(2n) {margin-left: 10px;}
+.kidpageGallery li:nth-child(2n + 1) {clear: both;}
+
+.where_am_i_going p, .where_have_i_been p {border-bottom: 1px dotted #ec008c; padding-bottom: 25px;}
+
+
+/*.olivia {background: url(/images/bg_olivia.png) center top;}
+.jessica {background: url(/images/bg_jessica.png) center top;}
+.ben {background: url(/images/bg_ben.png) center top;}
+.anael {background: url(/images/bg_anael.png) center top;}*/
+
+.gal_caption {width: 225px; text-align: center;}
+
+#lbBottom a {color: #ec008c;}
+
+.thank_logos {
+    width: 600px;
+    margin: 20px auto;
+}
+.thankyou {
+    text-align:center;
+}
+
+
+
+
+
+
